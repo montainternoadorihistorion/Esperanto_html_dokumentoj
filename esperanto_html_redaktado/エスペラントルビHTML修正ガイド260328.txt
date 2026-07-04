@@ -754,6 +754,26 @@ CSSクラスは「rt側のピクセル幅 ÷ rb側のピクセル幅」の比率
   → 例: <ruby>Edmond Privat<rt class="S_S">[人名]エドモン・プリヴァ</rt></ruby>
         （「Privat」を「私的な」と分解しない）
 
+■ 実例集: アプリ全数すり合わせ(2026-07, 全123文書×7ラウンド)で検出・是正済みの誤分解
+  以下は本コーパスで実際に発生していた固有名詞の偽語根。同型の再発防止の参考とすること。
+  Klara     : Klar(明瞭な)+a × → [人名]クララ（ザメンホフ夫人 Klara Zilbernik）
+  Chiune    : Ch+iu(ある人)+ne × → [人名]千畝（杉原千畝）
+  Sugihara  : Sugi+har(毛)+a × → [人名]杉原
+  Fukui     : Fuk(ヒバマタ)+ui × → [人名]福井 ／ Masaharu: Ma+sahar(サハラ)+u × → [人名]正晴
+  York      : Y+ork(シャチ) × → [地名]ヨーク（York大学）
+  Ikeda     : Ik+eda(エッダ) × → [地名]池田
+  Okayama   : Ok(八)+ay+am(愛する)+a × → [地名]岡山
+  Fogel     : Fo+gel(霜) × → [人名]フォーゲル
+  Nemunas   : N+em(傾向)+u+nas(うけ) × → [地名]ネムナス（カウナスの川）
+  Lusin     : Lu(賃借する)+si(自分)+n × → [人名]魯迅
+  Antoni    : Anton+i（-iを動詞語尾扱い） × → [人名]アントニ（ポーランド語名 Jan Antoni）
+  Tiba      : Tib+a（-aを形容詞語尾扱い） × → [地名]千葉（gubernio Tiba＝名詞。語末-aは名前の一部）
+  Barato系  : bar(障害)+at(受動継続)+a × → barat(インド)+a（国名Barato の形容詞 barata）
+  ※ 借用語の同型例: platformo を plat(平たい)+form(形)+o と割らない（1語根 platform）。
+  ※ 名前の語末が -i / -a / -o でも、文脈が名詞（前置詞の目的語・同格）なら語尾分解しないこと
+    （Antoni・Tiba 型）。逆に Blis/a（ブリス文字）・Kanto/a（関東+形容詞語尾）のように
+    実際に形容詞用法の場合は分離が正しい。判断は必ず対訳・文脈で行う。
+
 ■ ラテン語由来の人名の誤分解
   ラテン語由来の人名はエスペラント語根の組合せに見えることがある。
   Urbano  → Urb(市) + an(成員) + o × （教皇ウルバヌス。人名）
